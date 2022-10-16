@@ -1,0 +1,4 @@
+color1= #051622  green background
+color2= #1ba098  green olive
+color3 = #deb992 orange
+color4 = #869ba9  gray
