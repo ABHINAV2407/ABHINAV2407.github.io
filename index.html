@@ -1,274 +1,251 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
-<link rel="stylesheet" href="mystyle.css">
-<!-- <link rel="stylesheet" href="effects.scss"> -->
-<link rel="stylesheet/less" type="text/css" href="effects.less" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
-    <div id="mainn">
-        <div id="navbar">
-            <div id="iamshanu"><span style="color:#1ba098 ">Im</span>Abhinav</div>
-            <div>
-                <div id="homes">Home</div>
-                <div id="abouts">About</div>
-                <div id="skilles">Skills</div>
-                <div id="projects">Project</div>
-                <div id="contacts">Contact</div>
-                <div id=" resumes">Resume</div>
-            </div> 
-        </div>
-        <div id = "nitya">
-            <div id="shanu">
-                <h1> Hi, I am <span style="color:#1ba098 ;">Abhinav</span></h1>
-                <!-- <p><span style="color:rgb(167, 167, 167);">A Full Stack </span> Web Developer!</p> -->
-                <span style="color:rgb(167, 167, 167); margin-bottom: 200px; font-weight: 550; font-size: 40px;margin-top: -50px;">An Aspiring </span>
-                <div class='console-container'>   
-                    <span id='text'></span>
-                    <div class='console-underscore' id='console' style="color:#1ba098 ">&#95; </div>
-                </div>
-                <p style="font-size:20px; line-height: 24px; color:rgb(176, 176, 176); padding-top: 35px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, illum beatae maiores exercitationem esse voluptatibus et dolorum officia nulla quod suscipit amet, ducimus molestiae, minus saepe. Dolores ratione explicabo adipisci.
-                Possimus soluta obcaecati molestias illo delectus laborum ea dolore ipsam, modi minus vel ullam officia commodi odit totam quod vitae voluptas nihil ipsa rem libero expedita aut quidem asperiores. Repellat.</p>
-                <button> Connect Me </button>
-            </div>
-            <div id="pic">
-                <img src="image/final.png"/>    
-                <!-- <p style="margin-top:-90px; margin-left: 100px; font-size: 50px; font-weight: 800; color:#1ba098 ;">Java <img src="image/java (2).png" style="height:80px; width: 80px; margin-bottom: -15px; margin-left: -13px;"></p>
-                <p style="margin-top:-23px; margin-left: 100px; font-size: 50px; font-weight: 800;">Programmer</p> -->
 
-            </div>           
-        </div>
+  <!-- navbar started -->
+  <div id="navbar">
+    <div id="name">
+      <img id="name-img" src="image/name.png" alt="Abhinav">
+    </div>
+    <div id="list">
+      <a class="list-item hover-underline-animation" href="#home-section">Home</a>
+      <a class="list-item hover-underline-animation" href="#about-section">About Me</a>
+      <a class="list-item hover-underline-animation" href="#skills-section">Skills</a>
+      <a class="list-item hover-underline-animation" href="#project">Project</a>
+      <a class="list-item hover-underline-animation" href="#contact">Contact</a>
+    </div>
+  </div>
+  <div id="navham">
+    <div id="menu"  onclick="onClickMenu()">
+         <div id="bar1" class="bar"></div>
+         <div id="bar2" class="bar"></div>
+         <div id="bar3" class="bar"></div>
     </div>
 
-    <!-- ---------------------------------SKILLS------------------------------------------ -->
+    <ul class="nav" id="nav">
+        <li> <a onclick="removemenu()" class="anchor" href="#home-section">Home</a></li>
+        <li> <a onclick="removemenu()" class="anchor" href="#about-section">About Me</a></li>
+        <li> <a onclick="removemenu()" class="anchor" href="#skills-section">Skills</a></li>
+        <li> <a onclick="removemenu()" class="anchor" href="#project">Projects</a></li>
+        <li> <a onclick="removemenu()" class="anchor" href="#contact">Contact</a></li>
+  </ul>
 
-    <div id="skills">
-        <h3><span style="color: #1ba098 ;">My</span>Skills</h3>
-        <div id="gap">
-            <h1><span style="color:#1ba098 ">Front-end </span> Technologies</h1>
-            <div id="front">
-                <div class="frontend">
-                    <div>
-                        <img src="image/html-5.png">
-                        <h4 style="font-size: 20px">HTML 5</h4>
-                        <h6>Lorem ipsum dolor sit amet consecte adipisicing elit. Vitae ratione adipisci excepturi rem</h6>
-                        <h5>Learn more</h5>
-                    </div>
-                </div>
-                <div class="frontend">
-                    <div>
-                        <img src="image/css.png">
-                        <h4 style="font-size: 20px">CSS 3</h4>
-                        <h6>Lorem ipsum dolor sit amet consecte adipisicing elit. Vitae ratione adipisci excepturi rem</h6>
-                        <h5>Learn more</h5>
-                    </div>
-                </div>
-                <div class="frontend">
-                    <div>
-                        <img src="image/java-script.png">
-                        <h4 style="font-size: 20px">java-script</h4>
-                        <h6>Lorem ipsum dolor sit amet consecte adipisicing elit. Vitae ratione adipisci excepturi rem</h6>
-                        <h5>Learn more</h5>
-                    </div>
-                </div>
-                <div class="frontend">
-                    <div>
-                        <img src="image/netlify.png">
-                        <h4 style="font-size: 20px">Netlify</h4>
-                        <h6>Lorem ipsum dolor sit amet consecte adipisicing elit. Vitae ratione adipisci excepturi rem</h6>
-                        <h5>Learn more</h5>
-                    </div>
-                </div>
-            </div>
+</div>
+
+<!-- navbar ended -->
+
+<div id="main">
+
+<!-- home-section started-->
+<div id="home-section">
+  <div id="home-section-mini">
+      <div id="home-left">
+          <p > Hi, I am <span>Abhinav</span></p>
+          
+          <span style="color: #474B4F; margin-bottom: 200vh; font-weight: 550; font-size: 2.8vw;margin-top: -50vh;">An Aspiring 
+               <span class='console-container'>   
+              <span id='text' ></span>
+          </span></span>
+          
+
+
+      </div>
+      <div id="home-right"></div>
+  </div>
+
+  
+ 
+</div>
+<!-- home-section ended -->
+<!-- about me started -->
+
+<div id="about-section">
+    <div id="about-section-mini">
+        <div id="about-left">
+       <div>About Me</div>
+       <div><p>My name is Abhinav. I'm a Java Back-end Developer.
+          Aspiring Java Backend Developer with a proficient in Java, Spring Boot, SQL,Git, AWS, HTML, CSS, Javascript, Object-oriented, design And Self-motivated and curious, with a keen interest in building user-centric products. Looking forward to honing my skills in a challenging work environment .</p>
+          <div id="resume-button">
+            <button>Resume   <i style="color: #051622; background-color: aqua;" class="fa fa-download" aria-hidden="true"></i></button>
+          </div>
+          </div>
         </div>
-        <div id="gap1">
-            <h1><span style="color:#1ba098 ">Back-end </span> Technologies</h1>
-            <div id="front">
-                <div class="frontend">
-                    <div>
-                        <img src="image/java.png">
-                        <h4 style="font-size: 20px">JAVA</h4>
-                        <h6>Lorem ipsum dolor sit amet consecte adipisicing elit. Vitae ratione adipisci excepturi rem</h6>
-                        <h5>Learn more</h5>
-                    </div>
-                </div>
-                <div class="frontend">
-                    <div>
-                        <img src="image/mysql.png">
-                        <h4 style="font-size: 20px">MYSQL</h4>
-                        <h6>Lorem ipsum dolor sit amet consecte adipisicing elit. Vitae ratione adipisci excepturi rem</h6>
-                        <h5>Learn more</h5>
-                    </div>
-                </div>
-                <div class="frontend">
-                    <div>
-                        <img src="image/spring-boot.png">
-                        <h4 style="font-size: 20px">Spring Boot</h4>
-                        <h6>Lorem ipsum dolor sit amet consecte adipisicing elit. Vitae ratione adipisci excepturi rem</h6>
-                        <h5>Learn more</h5>
-                    </div>
-                </div>
-                <div class="frontend">
-                    <div>
-                        <img src="image/github.png">
-                        <h4 style="font-size: 20px">Github</h4>
-                        <h6>Lorem ipsum dolor sit amet consecte adipisicing elit. Vitae ratione adipisci excepturi rem</h6>
-                        <h5>Learn more</h5>
-                    </div>
+        <div id="about-right"> <img style="width: 100%;height: auto;" src="image/gateway-developer (1).png" alt="boy image"></div>
+    </div>
+  </div>
+
+  <!-- ---------------------------------skills--------------------------- -->
+
+  <div id="skills-section">
+    <h3 style="color:white"><span style="color: aqua;">My</span>Skills</h3>
+    <div id="gap">
+        <h1 style="color:white"><span style="color:aqua">Front-end </span> Technologies</h1>
+        <div id="front">
+            <div class="frontend">
+                <div>
+                    <img src="image/html-5.png">
+                    <h4>HTML 5</h4>
                 </div>
             </div>
-            <div id="front" style="margin-top: 28px; margin-bottom: 100px;">
-                <div class="frontend">
-                    <div>
-                        <img src="image/hibernate-white.svg">
-                        <h4 style="font-size: 20px">Hybernate</h4>
-                        <h6>Lorem ipsum dolor sit amet consecte adipisicing elit. Vitae ratione adipisci excepturi rem</h6>
-                        <h5>Learn more</h5>
-                    </div>
+            <div class="frontend">
+                <div>
+                    <img src="image/css.png">
+                    <h4>CSS 3</h4>
                 </div>
-                <div class="frontend">
-                    <div>
-                        <img src="image/postman-3521648.png">
-                        <h4 style="font-size: 20px">Postman</h4>
-                        <h6>Lorem ipsum dolor sit amet consecte adipisicing elit. Vitae ratione adipisci excepturi rem</h6>
-                        <h5>Learn more</h5>
-                    </div>
+            </div>
+            <div class="frontend">
+                <div>
+                    <img src="image/java-script.png">
+                    <h4>JavaScript</h4>
                 </div>
-                <div class="frontend" id="none"></div>
-                <div class="frontend" id="none"></div>
+            </div>
+            <div class="frontend">
+                <div>
+                    <img src="image/netlify.png">
+                    <h4>Netlify</h4>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-------------------------------PROJECTS----------------------------------->
-    <div id="project">
-        <h3><span style="color: #1ba098 ;">My</span>Projects</h3>
-        <div id="created">
-            <div class="work">
-                <img src="image/airtable21.png" style="width:100%">
-                <div class="layer">
-                    <h3 id="h3">Music App</h3>
-                    <p id="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda labore voluptatibus ipsa? Ipsa accusamus animi nulla reiciendis.</p>
-                    <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+    <div id="gap1">
+        <h1 style="color:white"><span style="color:aqua">Back-end </span> Technologies</h1>
+        <div id="front1">
+            <div class="frontend">
+                <div>
+                    <img src="image/java.png">
+                    <h4>Java</h4>
                 </div>
             </div>
-            <div class="work">
-                <img src="image/sendinblue.png" style="width:100%">
-                <div class="layer">
-                    <h3 id="h3">Music App</h3>
-                    <p id="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda labore voluptat ipsa? Ipsa accusamus animi nulla reiciendis.</p>
-                    <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+            <div class="frontend">
+                <div>
+                    <img src="image/mysql.png">
+                    <h4>MySql</h4>
                 </div>
             </div>
-            <div class="work">
-                <img src="image/backend11.png" style="width:100%">
-                <div class="layer">
-                    <h3 id="h3">Music App</h3>
-                    <p id="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda labore voluptatibus ipsa? Ipsa accusamus animi nulla reiciendis.</p>
-                    <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+            <div class="frontend">
+                <div>
+                    <img src="image/spring-boot.png">
+                    <h4>SpringBoot</h4>
                 </div>
             </div>
-            <div class="work">
-                <img src="image/backend2.jpg" style="width:105%">
-                <div class="layer">
-                    <h3 id="h3">Music App</h3>
-                    <p id="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda labore voluptatibus ipsa? Ipsa accusamus animi nulla reiciendis.</p>
-                    <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+            <div class="frontend">
+                <div>
+                    <img src="image/github.png">
+                    <h4>GitHub</h4>
                 </div>
             </div>
-        </div>
-        <div id="created" style="margin-top:100px;">
-            <div class="work">
-                <img src="image/airtable21.png" style="width:100%">
-                <div class="layer">
-                    <h3 id="h3">Music App</h3>
-                    <p id="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda labore voluptatibus ipsa? Ipsa accusamus animi nulla reiciendis.</p>
-                    <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+            <div class="frontend">
+                <div>
+                    <img src="image/hibernate-white.svg">
+                    <h4>Hibernate</h4>
                 </div>
             </div>
-            <div class="work">
-                <img src="image/sendinblue.png" style="width:100%">
-                <div class="layer">
-                    <h3 id="h3">Music App</h3>
-                    <p id="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda labore voluptat ipsa? Ipsa accusamus animi nulla reiciendis.</p>
-                    <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+            <div class="frontend">
+                <div>
+                    <img src="image/postman-3521648.png">
+                    <h4>Postman</h4>
                 </div>
             </div>
-            <div class="work">
-                <!-- <img src="image/backend1.png"> -->
-                <div class="layer">
-                    <h3 id="h3">Music App</h3>
-                    <p id="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda labore voluptatibus ipsa? Ipsa accusamus animi nulla reiciendis.</p>
-                    <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                </div>
-            </div>
-        </div>
-    </div> 
-
-    <!-- -----------------------coding detaila----------------------------  -->
-
-    <div id="coded">
-        <div>
-            <div class="cod">
-                <h1>1200+</h1>
-                <p>HOURS OF CODING</p>
-            </div>
-            <div class="cod">
-                <h1>400+</h1>
-                <p>GIT COMMITS</p>
-            </div>
-            <div class="cod">
-                <h1>5+</h1>
-                <p>PROJECTS</p>
-            </div>
-            <div class="cod">
-                <h1>100+</h1>
-                <p>HOURS OF SOFT SKILL</p>
-            </div>
+            <!-- <div class="frontend" id="none"></div>
+            <div class="frontend" id="none"></div> -->
         </div>
     </div>
+  </div>
 
-    <!-- --------------------------Contact Me----------------------------- -->
+   <!-- ---------------------------------projects--------------------------- -->
+  
+   <div id="project">
+    <h3><span style="color: aqua;">My</span>Projects</h3>
+    <div id="created">
+  
+      <div class="work">
+          <img src="image/backend11.png">
+          <div class="layer">
+              <h3 id="h3">Music App</h3>
+              <p id="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+              <a href="#">Live</a>
+              <a href="#">GitHub</a>
+          </div>
+      </div>
+      <div class="work">
+          <img src="image/backend11.png">
+          <div class="layer">
+              <h3 id="h3">Music App</h3>
+              <p id="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+              <a href="#">Live</a>
+              <a href="#">GitHub</a>
+          </div>
+      </div>
+        <div class="work">
+          <img src="image/backend11.png">
+          <div class="layer">
+              <h3 id="h3">Music App</h3>
+              <p id="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+              <a href="#">Live</a>
+              <a href="#">GitHub</a>
+          </div>
+      </div>
+    </div>
+    </div>
+ 
 
-    <div id="contact">
-        <div id="contactme">
-            <div id="firstcontact">
-                <h1>Contact <span style="color:#1ba098 ">Me</span></h1>
-                <div id="git"><img src="image/github.png"> <p>abhinav636363@gmail.com</p></div>
-                <div id="tele"><img src="image/phone-call.png"> <p>+918447860373</p></div>
-                <div id="all">
-                    <img src="image/facebook.png" alt="">
-                    <img src="image/twitter-sign.png" alt="">
-                    <img src="image/instagram.png" alt="">
-                    <img src="image/linkedin.png" alt="">
-                </div>
-                <button>Download CV</button>
+<!-- -------------------------------------------contact---------------------------------------------------- -->
+  <div id="contact">
+    <div id="contactme">
+        <div id="firstcontact">
+            <h1 style="color: aqua;">Contact <span style="color:white;">Me</span></h1>
+            <div id="git"><img src="image/github.png"> <p>ABHINAV2407</p></div>
+            <div id="tele"><img src="image/phone-call.png"> <p>+918447860373</p></div>
+            <div id="all">
+                <img src="image/facebook.png" alt="">
+                <img src="image/twitter-sign.png" alt="">
+                <img src="image/instagram.png" alt="">
+                <img src="image/linkedin.png" alt="">
             </div>
-            <div id="secondcontact">
-                <div id="same">
-                    <p>Your Name</p>
-                </div>
-                <div id="same">
-                    <p>Your Email</p>
-                </div>
-                <div id="diff">
-                    <p>Your Message</p>
-                </div>
-                <button id="submit" style="width:130px;">submit</button>
-            </div>
+            <button>Download CV</button>
+        </div>
+        <div id="secondcontact">
+            <form action="https://formsubmit.co/abhinav636363@gmail.com" method="post" target="_blank" rel="noopener noreferrer">
+
+                <input type="hidden" name="_template" value="table">
+
+                <input type="hidden" name="_autoresponse" value="Thank you for reaching me.I will contact you soon...">
+
+                <input type="hidden" name="_subject" value="New submission!">
+
+                <input type="hidden" name="_next" value="">
+
+                <input type="text" name="name" placeholder=" Name" required="">
+
+                <input type="email" name="email" placeholder=" Email" required="">
+
+                <input id="msg" name="Message" rows="6" placeholder=" Message"></input>
+
+
+                <button type="submit" id="contact-button">SEND</button>
+            </form>
+          
         </div>
     </div>
+</div>
+
+
+
+
+</div>
 </body>
-    <script src="myscript.js"></script>
-    <script src="navbar.js"></script>
 </html>
+<script src="index.js"></script>
+
+
+
+<!-- we have to do control z -->

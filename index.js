@@ -1,31 +1,65 @@
-// <!-- <!DOCTYPE html>
-// <html lang="en">
-// <head>
-//     <meta charset="UTF-8">
-//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//     <title>Abhinav | Java Backend Developer | Spring Boot</title>
-//     <link rel="stylesheet" href="index.css">
-// </head>
-// <body>
-//    <div id="navbar">
-//     <div><img id="nav-logo"  src="image (11).png" alt=""></div>
-//         <div></div>
-//         <div class="nav-list">
-//             <div>About Me</div>
-//             <div>Skills</div>
-//             <div>Projects</div>
-//             <div>Contacts</div>
-//             <div>Resume</div>
-//         </div>
-   
-//    </div>
-// </body>
-// </html>
+function onClickMenu(){
+    document.getElementById("menu").classList.toggle("icon");
+    document.getElementById("nav").classList.toggle("change");
+  }
+  
+  
+  consoleText(['Full Stack Web Developer!', 'Problem Solver'], 'text',['#00ffff']);
+  // rgb(220, 100, 2)
+  function consoleText(words, id, colors) {
+    if (colors === undefined) colors = ['#fff'];
+    var visible = true;
+    var con = document.getElementById('console');
+    var letterCount = 1;
+    var x = 1;
+    var waiting = false;
+    var target = document.getElementById(id)
+    target.setAttribute('style', 'color:' + colors[0])
+    window.setInterval(function() {
+  
+      if (letterCount === 0 && waiting === false) {
+        waiting = true;
+        target.innerHTML = words[0].substring(0, letterCount)
+        window.setTimeout(function() {
+          var usedColor = colors.shift();
+          colors.push(usedColor);
+          var usedWord = words.shift();
+          words.push(usedWord);
+          x = 1;
+          target.setAttribute('style', 'color:' + colors[0])
+          letterCount += x;
+          waiting = false;
+        }, 1000)
+      } else if (letterCount === words[0].length + 1 && waiting === false) {
+        waiting = true;
+        window.setTimeout(function() {
+          x = -1;
+          letterCount += x;
+          waiting = false;
+        }, 1000)
+      } else if (waiting === false) {
+        target.innerHTML = words[0].substring(0, letterCount)
+        letterCount += x;
+      }
+    }, 120)
+    // window.setInterval(function() {
+    //   if (visible === true) {
+    //     consoleText.className = 'console-underscore hidden';
+    //     visible = false;
+  
+    //   } else {
+    //     consoleText.className = 'console-underscore';
+  
+    //     visible = true;
+    //   }
+    // }, 400)
+  }
 
-// <script src="index.js"></script> -->
 
+  function removemenu(){
 
-
-
-// <!-- 22-oct -->
+    document.getElementById("menu").classList.toggle("icon");
+    document.getElementById("nav").classList.toggle("change");
+  
+  }
+  

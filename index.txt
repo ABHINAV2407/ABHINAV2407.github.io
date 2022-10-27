@@ -2,3 +2,32 @@ color1= #051622  green background
 color2= #1ba098  green olive
 color3 = #deb992 orange
 color4 = #869ba9  gray
+
+ #051622; back ground
+ aqua 
+
+
+
+  #474B4F  nitya
+
+
+   only 1 professional photo, .
+"- Showcase 4-5 of your best projects in this section
+    - Project Cover Image
+    - Project Title
+    - Project Description
+    - Tech Stacks used in the  project are highlighted
+-Project Cards details are visible in the first go, need not click on them to view them."
+"-Ensure the GitHub links and Deployment links are correct and in working condition
+-Ensure the deployed project links are correct and in working condition
+- If backend projects do not have deployed links, project demo video needs to be updated."
+"-github-stats
+- github-calendar"
+
+"- Ensure all the social media links, where you want to be contacted, by the potential employers, should be present here. LinkedIn and GitHub account links are musts
+
+
+"- The button should be present on your About me/Homepage section & In Resume Section.
+- On clicking the “Resume” button, your resume should be downloaded in pdf format. & the google drive link should be viewable in a new tab.
+-The name of the file should be in the following format,  ""Firstname-Lastname-Resume"". Eg: ""Ankit-Verma-Resume"""
+abhinav image change....
