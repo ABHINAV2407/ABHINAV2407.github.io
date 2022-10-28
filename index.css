@@ -1093,3 +1093,93 @@
   
   
   /* we have to do control z */
+
+
+  .statsBox{
+    display: block;
+    text-align: center;
+    background-color: #051622;
+    padding-top: 5%;
+}
+
+.statsBox > h3{
+    font-size: 20px;
+    border: 3px solid black;
+    width: 15%;
+    margin: auto;
+    border-radius: 7px;
+    background-color: aqua;
+    color: white;
+    margin-bottom: 1%;
+    padding: 4px;
+}
+
+.statsContainer{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+@media all and (min-width: 400px) and (max-width: 786px){
+
+    .statsContainer{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .statsContainer > div a img{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .statsBox > h3{
+        font-size: 15px;
+        margin-bottom: 5%;
+        width: fit-content;
+        background-color: white;
+        color: rgb(54, 3, 3);
+        border: 1px solid rgb(22, 4, 61);
+    }
+    
+}
+
+
+@media all and (min-width: 54px) and (max-width: 400px){
+    .statsContainer{
+        display: block;
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .statsContainer > div a img{
+        width: 100%;
+    }
+    
+    .statsBox > h3{
+        font-size: 13px;
+        margin-bottom: 5%;
+        width: 20%;
+        background-color: white;
+        color: rgb(54, 3, 3);
+        border: 1px solid rgb(22, 4, 61);
+    }
+}
+
+
+.graph{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  /* border: 1PX solid red; */
+}
+
+.graph > a > img{
+  width: 100%;
+  /* border: 1px solid red; */
+  margin: auto;
+  /* margin-left: 10%; */
+}
