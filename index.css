@@ -30,11 +30,11 @@
     cursor: pointer;
   }
   #name-img{
-   width: 60%;
+   width: 70%;
     height: auto;
     /* border: 1px solid red;   */
     margin-left: 15%;
-    margin-top: 6%;
+    margin-top: 11%;
   }
   
   #list{
@@ -118,7 +118,7 @@
   }
  
   #home-right{
-    height: 70vh;
+    height: auto;
     /* border: 1px solid red; */
   
   }
@@ -507,7 +507,7 @@
      }
    
      #home-right{
-       height: 250px;
+       height: auto;
        /* border: 1px solid red; */
      }
    
@@ -761,8 +761,53 @@
     gap: 40px;
   }
  
+ /* =========================================ashish============================= */
+
+
+
+ .statsContainer{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+}
+
+.statsContainer > div a img{
+  width: 100%;
+  margin: auto;
+}
+
+.statsBox > h3{
+  font-size: 15px;
+  margin-bottom: 5%;
+  border: 1px solid rgb(22, 4, 61);
+}
+  
+.stats-3{
+  display: block;
+  padding-top: 3%;
+}
+
+.stats-3  img{
+  width: 40%;
+  margin: auto;
+}
+
+
+.graph  img{
+  width: 90%;
+  margin: auto;
+}
+
+.graph-1  img{
+  width: 80%;
+  margin:auto;
+}
+
+
+
  
-  } 
+} 
   
   
   @media all and (min-width:54px) and (max-width:400px){
@@ -810,7 +855,7 @@
      }
    
      #home-right{
-       height: 250px;
+       height: auto;
        /* border: 1px solid red; */
      }
    
@@ -1030,7 +1075,7 @@
    
   .frontend {
     width: 70%;
-    border: 1px solid aqua;
+    border: 1px solid #00ffff;
     height: auto;
     margin: auto;
     border-radius: 10px;
@@ -1119,6 +1164,12 @@
     width: 100%;
     margin: auto;
     justify-content: center;
+
+
+
+
+  
+
 }
 
 @media all and (min-width: 400px) and (max-width: 786px){
@@ -1182,4 +1233,66 @@
   /* border: 1px solid red; */
   margin: auto;
   /* margin-left: 10%; */
+}
+
+/* --------------------------------------ashish------------------------------------------ */
+
+.graph{
+  width: 100%;
+  margin: auto;
+  display: block;
+  text-align: center;
+  background-color: #0d1117;
+}
+
+
+
+.graph  img{
+  width: 80%;
+  margin: auto;
+}
+
+
+@media all and (min-width: 250px) and (max-width: 480px){
+  .statsContainer{
+      display: block;
+      width: 90%;
+      margin: auto;
+      justify-content: center;
+  }
+ 
+  .stats-2  img{
+      width: 95%;
+      margin: auto;
+  }
+
+  .statsContainer > div a img{
+      width: 100%;
+  }
+  
+  .statsBox > h3{
+      font-size: 13px;
+      margin-bottom: 5%;
+      border: 1px solid rgb(22, 4, 61);
+  }
+  .stats-3{
+      display: block;
+      margin-top: 5%;
+  }
+  .stats-3  img{
+      width: 60%;
+      margin: auto;
+      margin-top: 5%;
+  }
+
+
+  .graph  img{
+    width: 90%;
+    margin: auto;
+}
+
+.graph-1  img{
+    width: 80%;
+    margin:auto;
+}
 }
