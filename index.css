@@ -426,6 +426,11 @@
     border: 2px solid aqua;
   }
   #secondcontact {
+    /* width: 50%; */
+    /* border: 1px solid red; */
+    /* background-color: black; */
+    
+    
   }
   #secondcontact  input {
     margin-top: 1.5%;
@@ -466,7 +471,14 @@
         width: 0;
     }
   
+    /* #home-section{
+      z-index: -100;
+      position: absolute;
+    } */
+  
     #home-section{
+       /* z-index: -100; */
+       /* position: absolute; */
        height: auto;
        margin-top:10%;
      }
@@ -500,6 +512,9 @@
      }
    
     #about-section{
+      /* z-index: -100; */
+      /* position: absolute; */
+      /* top: 500px; */
      }
   
   
@@ -672,6 +687,13 @@
  
    /* --------------------------------------------- media query skills 1 ----------------------------------------- */
  
+ /* #skills-section{
+    z-index: -100;
+    position: absolute;
+    top: 1500px;
+   } */
+  
+  
    #front, #front1{
     margin: auto;
     display: grid;
@@ -703,7 +725,9 @@
  /* ------------------------------------------------my projects media query 1-------------------------------------------- */
  
  #project{
-   
+    /* z-index: -100; */
+    /* position: absolute; */
+    /* top: 2500px; */
     width: 80vw;
     margin: auto;
     margin-top:10px;
@@ -835,7 +859,11 @@
        /* border: 1px solid red; */
      }
    
- 
+    #about-section{
+      /* z-index: -100; */
+      /* position: absolute; */
+      /* top: 500px; */
+    }
   
     .list-item{
       font-size: 0;
@@ -998,6 +1026,9 @@
  
  
   #skills-section{
+    /* z-index: -100;
+    position: absolute;
+    top: 1610px; */
     margin-top: 25%;
   }
   
@@ -1062,6 +1093,9 @@
  /* ----------------------------------------------my projects media query 2-------------------------------------- */
  
  #project{
+    /* z-index: -100;
+    position: absolute;
+    top: 2500px; */
     width: 80vw;
     margin: auto;
     margin-top:10px;
@@ -1095,8 +1129,17 @@
     flex-direction: column;
     gap: 40px;
   }
+  
+ 
+ 
+  
   }
   
+  
+  
+  /* we have to do control z */
+
+
   .statsBox{
     display: block;
     text-align: center;
