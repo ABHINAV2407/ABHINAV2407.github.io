@@ -42,17 +42,7 @@ function onClickMenu(){
         letterCount += x;
       }
     }, 120)
-    // window.setInterval(function() {
-    //   if (visible === true) {
-    //     consoleText.className = 'console-underscore hidden';
-    //     visible = false;
-  
-    //   } else {
-    //     consoleText.className = 'console-underscore';
-  
-    //     visible = true;
-    //   }
-    // }, 400)
+   
   }
 
 
