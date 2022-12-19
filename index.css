@@ -344,6 +344,20 @@
    padding: 0 3% 0 3%;
  
   }
+  .newlayer a {
+    margin-top: 10%;
+    color: aqua;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 30px;
+    background: #fff;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+   text-align: center;
+   padding: 0 3% 0 3%;
+ 
+  }
   .layer a:hover {
     background-color:aqua;
     color: white;
